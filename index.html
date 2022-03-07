@@ -10,18 +10,55 @@
 
 <body>
     <!--Need to reference High Scores Here-->
-    <div class="score-and-timer">
+    <header>
         <a href="high-score">
             <h2>High Score</h2>
         </a>
-        <!--Timer will go here-->
-    </div>  
-
-    <div class="intro">
         <h1>Javascript Quiz</h1>
-        <div class="into-container">
+        <h2 class="countdown"> Counter </h2>
+    </header>
+   
+    <div class="intro">
         <button id="start">Begin If You Dare</button>
         <button id="replay">Play Again</button>
+    </div>
+
+
+    <div class="questions-container">
+        <!--questions?-->
+        <div class="questions" id="questionOne">
+           <p>Which is not a valid event listener?</p>
+        </div>
+        <div class="answers" id="answerOne">
+            <button class="answerOne" id="QA1.1"> "dragover"</button>
+            <button class="answerOne" id="QA1.2"> "click"</button>
+            <button class="answerOne" id="QA1.3"> “invalid” </button>
+            <button class="answerOne" id="QA1.4"> "retreive"</button>
+        </div>
+        <div class="questions" id="questionTwo">
+            <p>True or False: Undefined is a type of primitive value. </p>
+        </div>
+        <div class="answers" id="answerTwo">
+            <button class="answerTwo" id="QA2.1"> True </button>
+            <button class="answerTwo" id="QA2.2"> False </button>
+        </div>
+        <div class="questions" id="questionThree">
+            <p>taskSelected.querySelector(); will:</p>
+        </div>
+        <div class="answers" id="answerThree">
+            <button class="answerThree" id="QA3.1"> Search the DOM element for a specific task </button>
+            <button class="answerThree" id="QA3.2"> Search within the task element only for a task </button>
+            <button class="answerThree" id="QA3.3"> Append a task to the parent element  </button>
+            <button class="answerThree" id="QA3.4"> Creates a task alert for the end user </button>
+        </div>
+        <div class="questions" id="questionFour">
+            <p>This symbol <b>[]</b> in JavaScript normally represents: </p>
+        </div>
+        <div class="answers" id="answerFour">
+            <button class="answerFour" id="QA4.1"> an Object </button>
+            <button class="answerFour" id="QA4.2"> a Condition </button>
+            <button class="answerFour" id="QA4.3"> a Statement  </button>
+            <button class="answerFour" id="QA4.4"> an Array </button>
         </div>
     </div>   
 
@@ -29,6 +66,5 @@
 
 
 </body>
-
 
 </html>
